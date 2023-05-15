@@ -128,6 +128,7 @@ class GameFragment : Fragment() {
 
 
     private fun restartGame() {
+        viewModel.reinitializeData()
         setErrorTextField(false)
         updateNextWordOnScreen()
     }
